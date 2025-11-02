@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Log in</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(18, 71, 59);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    form {
+      background-color: antiquewhite;
+      border-radius: 15px;
+       padding: 30px 35px;
+        width: 280px;
+        box-shadow: 0 0 15px rgb(148, 109, 109);
+      
+    }
+    form h1 {
+      margin-bottom: 25px;
+      text-align: center;
+      color: #333;
+    }
+    .input-box {
+        position: relative;
+      margin-bottom: 5px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #333;
+        font-weight: 600;
+      }
+      input{
+        width: 100%;
+        border: 2px solid #ccc;
+        border-radius: 8px;
+        padding: 10px 40px 10px 10px;
+        font-size: 13px;
+        outline: none;
+        transition: 0.3s;
+      }
+      input:focus {
+        border-color: teal;
+        box-shadow: 0 0 5px rgba(0, 128, 128, 0.695);
+      }
+    /* Eye icon inside password box */
+      .input-box i {
+        position: absolute;
+        right: 10px;
+        top: 38px;
+        cursor: pointer;
+        color: #555;
+      }
+
+    .login{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .login button{
+       
+        border-radius: 5px;
+        background-color: teal;
+        color: white;
+        border: none;
+        padding: 10px 25px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .login button:hover {
+        background-color: rgb(12, 90, 80);
+      }
+      .register {
+        text-align: center;
+        margin-top: 10px;
+        color: #333;
+      }
+      .register span {
+        color: teal;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      .register span:hover {
+        text-decoration: underline;
+      }
+      
+  </style>
+  <body>
+    <form action="" method="post">
+      <h1>Login</h1>
+      <div class="input-box">
+        <label for="username">Username:</label>
+        <input type="text" id="username" placeholder="Enter username"/>
+      </div>
+      <div class="input-box">
+        <label for="password">password:</label>
+        <input type="password" id="password" placeholder="Enter password" />
+        <i class="fa-solid fa-eye" id="togglePassword"></i>
+      </div>
+      <div class="login">
+        <button type="submit">Log In</button>
+      </div>
+      <div class="register">
+        Don’t have an account? <span>Register</span>
+      </div>
+    </form>
+  </body>
+</html>
